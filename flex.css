@@ -1,0 +1,130 @@
+.topo{
+    background-color:#333;
+}
+.containerCentralizado{
+    display: flex;
+    justify-content: center; /*Centralizar o conteúdo na horizontal*/
+}
+.menu{
+     display: flex; /*Centralizar o conteúdo na horizontal*/
+     justify-content: space-between; /*Tamanho total, porém no máximo 1200px*/
+     width: 1200px; /*Deixa o tamanho adaptavel para todo tipo de tela*/
+     max-width: 1200px;
+     align-items: flex-end; /*Alinhar abaixo*/
+}
+.menu a{
+    color: white;
+    font-size: 22px;
+}
+.menu li{
+    display: inline; /* Deixa o texto um ao lado do outro*/
+    padding-right: 15px; /*espaçamento a direita*/
+}
+.menu img{
+    height: 80px; /* altura da imagem. *obs: sempre definir uma altura, pois em alguns sites o tamanho da imagem fica desproporcional*/
+}
+.capa{
+    background-image: url("capa-academia.jpg"); /*Imagem de fundo*/
+    width: 100%;
+    height: 300px;
+    background-size: cover; /*tamanho do fundo*/
+    background-position: center center;/*posicionamento do fundo*/
+}
+.itemPadrao{
+    /*tamanho total, porém no máximo 1200px*/
+    width: 100%;
+    max-width: 1200px;
+}
+.detalhe1{
+    display: flex;
+    justify-content: space-between; /* Deixa um ao lado do outro*/
+    align-items: center;
+}
+.detalhe1 div{
+    width: 47%; /*largura para cada item*/
+}
+.detalhe1 img{
+    width: 100%; /*para a imagem ficar responsiva*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0px; /*tira espaçamento que fica por padrão*/
+}
+.rodape{
+    background-color:#333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+}
+
+
+th{
+    background-color: darkcyan; /*Cor de fundo*/
+    color: white; /*cor do texto*/
+    font-size: 20px; /*tamanho da fonte*/
+    font-weight: 100; /*espessura da página*/
+}
+table{
+    font-family: 'Segoe UI'; /*fonte*/
+    width: 100%; /*larguta*/
+    max-width: 1000px; /*largura máxima*/
+    padding-bottom: 150px;
+}
+caption{
+    font-size: 26px; /*tamanho da fonte*/
+    font-weight: 100px; /*espessura da página*/
+    color: darkcyan; /*cor do texto*/
+    padding-top: 35px;
+}
+td{
+    border: 1px solid lightgray; /*borda*/
+    text-align: center; /*centralizar texto*/
+}
+
+#tabelas{
+    background-color: gray;
+}
+input, textarea{
+    width: 100%;
+    max-width: 400px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none; /* Sem borda*/
+}
+button{
+    background-color:#333;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer; /* Altera o cursos do mouse*/
+}
+@media (max-width:460px){
+    /*CSS a ser aplicada para telas próximo a Mobile*/
+    .detalhe1, .detalhe2{
+        display: block;
+    }
+    .detalhe1 div, .detalhe2 div{
+        width: 100%;
+    }
+    .detalhe2 .item{
+        width: 90%;
+    }
+    .detalhe3 img{
+        max-width: 250px;
+    }
+    .menu{
+        display: block;
+        text-align: center;
+    }
+    .menu ul{
+        padding: 0;
+    }
+}
+
